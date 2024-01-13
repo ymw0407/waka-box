@@ -876,7 +876,7 @@ module.exports = (function(e, t) {
           gist_id: o,
           files: {
             [e]: {
-              filename: `📊 Weekly development breakdown`,
+              filename: `📊 Yearly development breakdown`,
               content: r.join("\n")
             }
           }
@@ -2654,11 +2654,11 @@ module.exports = (function(e, t) {
       var a =
         cmp(this.semver, "<", e.semver, t) &&
         (this.operator === ">=" || this.operator === ">") &&
-          (e.operator === "<=" || e.operator === "<");
+        (e.operator === "<=" || e.operator === "<");
       var u =
         cmp(this.semver, ">", e.semver, t) &&
         (this.operator === "<=" || this.operator === "<") &&
-          (e.operator === ">=" || e.operator === ">");
+        (e.operator === ">=" || e.operator === ">");
       return n || i || (s && o) || a || u;
     };
     t.Range = Range;
@@ -14642,7 +14642,9 @@ module.exports = (function(e, t) {
       return (
         !!t &&
         (typeof e == "number" || h.test(e)) &&
-        e > -1 && e % 1 == 0 && e < t
+        e > -1 &&
+        e % 1 == 0 &&
+        e < t
       );
     }
     function isKey(e, t) {
